@@ -20,7 +20,13 @@
     
 <body>
     <div id="app">
-    
+    <div class="container">
+        <div class="row">
+            <div v-for="disk in diskList" class="col-4 border" >
+                {{disk.title}}
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="./js/script.js"></script>
