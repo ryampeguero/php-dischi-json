@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1D2D3C;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    min-height: 80px;
+    max-height: 100px;
+    background-color: #06131F;
+    padding: 20px;
+}
+
+.navbar-logo {
+    max-width: 40px;
+    aspect-ratio: 1;
+}
+
+/* MAIN */
+.card-container {
+    padding: 30px;
+}
+/* Cards */
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    padding-top: 20px;
+}
+.ms_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: white;
+    background-color: #112030;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.ms_card h6 {
+    font-weight: 700;
+
+}
