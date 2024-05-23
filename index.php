@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +18,9 @@
 
     <!-- vuejs -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom style -->
     <link rel="stylesheet" href="./style/style.css">
@@ -44,6 +52,13 @@
                             <h6 class="card-title">{{ disk.title }}</h6>
                             <p class="card-text">{{ disk.author }}</p>
                             <h6>{{ disk.year }}</h6>
+
+                            <form action="server.php" method="GET">
+                            <input type="hidden" name="like" :value="disk.title"/>
+                                <button type="submit" class="btn">
+                                    <i class="fa-solid fa-heart" :class="(disk.like == true) ? 'liked' : 'tolike'"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>

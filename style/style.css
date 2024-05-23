@@ -48,10 +48,25 @@ img {
     color: white;
     background-color: #112030;
     min-height: 300px;
-    max-height: 300px;
+    /* max-height: 300px; */
 }
 
 .ms_card h6 {
     font-weight: 700;
 
+}
+
+.tolike {
+    color: white;
+    max-width: 20px;
+    aspect-ratio: 1;
+}
+
+.tolike:hover {
+    color: red;
+}
+
+.liked {
+    color: white;
+    max-width: 20px;
 }
