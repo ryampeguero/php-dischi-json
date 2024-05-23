@@ -30,12 +30,22 @@
     <div id="app">
         <!-- NAVBAR -->
         <section class="navbar">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-2">
+            <div class="container navbar-container">
+                <div class="row d-flex">
+                    <div class="col-2 d-flex justify-content-center">
                         <img src="./img/spotify_logo.png" alt="Logo spotify" class="navbar-logo">
                     </div>
-                    <div class="col-10"></div>
+
+                    <div class="col-2 ">
+                        <div class="filter d-flex">
+
+                            <div class="form-check">
+                                <button class="btn btn-success" @click="prova">Brani preferiti</button>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -54,7 +64,7 @@
                             <h6>{{ disk.year }}</h6>
 
                             <form action="server.php" method="GET">
-                            <input type="hidden" name="like" :value="disk.title"/>
+                                <input type="hidden" name="title_like" :value="disk.title" />
                                 <button type="submit" class="btn">
                                     <i class="fa-solid fa-heart" :class="(disk.like) ? 'liked' : 'tolike'"></i>
                                 </button>

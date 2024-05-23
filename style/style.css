@@ -20,11 +20,30 @@ img {
     max-height: 100px;
     background-color: #06131F;
     padding: 20px;
+    width: 100%;
+    /* border: 2px solid white; */
+}
+.navbar-container {
+    
+    min-width: 100%;
+    /* border: 1px solid red; */
 }
 
+.navbar-container .row {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
 .navbar-logo {
-    max-width: 40px;
+    max-width: 60px;
     aspect-ratio: 1;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
 }
 
 /* MAIN */
@@ -62,10 +81,10 @@ img {
     max-width: 20px;
     aspect-ratio: 1;
 }
-
+/* 
 .tolike:hover {
     color: red;
-}
+} */
 
 .liked {
     color: red;
