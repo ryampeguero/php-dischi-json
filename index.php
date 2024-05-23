@@ -56,7 +56,7 @@
                             <form action="server.php" method="GET">
                             <input type="hidden" name="like" :value="disk.title"/>
                                 <button type="submit" class="btn">
-                                    <i class="fa-solid fa-heart" :class="(disk.like == true) ? 'liked' : 'tolike'"></i>
+                                    <i class="fa-solid fa-heart" :class="(disk.like) ? 'liked' : 'tolike'"></i>
                                 </button>
                             </form>
                         </div>
