@@ -63,8 +63,9 @@
                             <p class="card-text">{{ disk.author }}</p>
                             <h6>{{ disk.year }}</h6>
 
-                            <form action="server.php" method="GET">
-                                <input type="hidden" name="title_like" :value="disk.title" />
+                            <form action="server.php" method="POST">
+                                <input type="hidden" name="action" value="like" />
+                                <input type="hidden" name="title_liked" :value="disk.title" />
                                 <button type="submit" class="btn">
                                     <i class="fa-solid fa-heart" :class="(disk.like) ? 'liked' : 'tolike'"></i>
                                 </button>
